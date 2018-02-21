@@ -5,17 +5,19 @@ package elseif;
 
 import java.util.Random;
 
+import javax.swing.JOptionPane;
+
 public class HighLowGame {
 
 	public static void main(String[] args) {
 		// 3. Change this line to give you a random number between 1 - 100. 
-		int random = new Random().nextInt(5);
+		int random = new Random(1).nextInt(100);
 		// 2. Print out the random variable above
-		
+		System.out.println(random);
 		// 11. do the following 10 times
 		
 			// 1. ask the user for a guess using a pop-up window, and save their response 
-
+		JOptionPane.showInputDialog("what number is your geuss?");
 			// 4. convert the users’ answer to an int (Integer.parseInt(string))
 			
 			// 5. if the guess is correct
